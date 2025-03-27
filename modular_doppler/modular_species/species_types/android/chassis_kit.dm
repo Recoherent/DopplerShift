@@ -251,3 +251,19 @@
 
 	new_android.forceMove(loc)
 	qdel(src)
+
+// exofab design
+/datum/design/chassis_kit
+	name = "Chassis Assembly Kit"
+	id = "chassis_kit"
+	build_type = MECHFAB
+	build_path = /obj/item/chassis_kit
+	materials = list(
+		/datum/material/iron=SHEET_MATERIAL_AMOUNT*20,
+		/datum/material/silver=SHEET_MATERIAL_AMOUNT*5,
+		/datum/material/gold=SHEET_MATERIAL_AMOUNT*3,
+	)
+	construction_time = 20 SECONDS
+	category = list(
+		RND_CATEGORY_CYBERNETICS + RND_SUBCATEGORY_CYBERNETICS_ADVANCED_LIMBS
+	)
